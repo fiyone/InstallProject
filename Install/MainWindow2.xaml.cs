@@ -24,7 +24,7 @@ namespace Install
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow2 : Window
     {
         private ProgramsEntity InstallEntity = Common.InstallEntity;
 
@@ -42,7 +42,7 @@ namespace Install
         private string shortName = "";
 
 
-        public MainWindow()
+        public MainWindow2()
         {
             InitializeComponent();
 

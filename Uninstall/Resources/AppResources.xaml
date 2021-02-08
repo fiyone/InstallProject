@@ -1,0 +1,76 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Uninstall">
+
+
+    <Style x:Key="NormalMouseButton" TargetType="Button">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Image x:Name="image"  OpacityMask="{x:Null}">
+                            <Image.Source>
+                                <DrawingImage>
+                                    <DrawingImage.Drawing>
+                                        <DrawingGroup ClipGeometry="M0,0 V22.693 H22.693 V0 H0 Z">
+                                            <DrawingGroup Transform="0.707106781186548,0.707106781186547,-0.707106781186547,0.707106781186548,11.28,0">
+                                                <GeometryDrawing Brush="#40000000" Geometry="F1 M22.693,22.693z M0,0z M15.39,7.216L8.748,7.216 8.748,0.75A0.75,0.75,0,0,0,8,0L8,0A0.75,0.75,0,0,0,7.249,0.75L7.249,7.216 0.751,7.216A0.75,0.75,0,0,0,0,7.966L0,7.966A0.75,0.75,0,0,0,0.751,8.716L7.251,8.716 7.251,15.2A0.75,0.75,0,0,0,8.002,15.95L8,15.95A0.75,0.75,0,0,0,8.751,15.2L8.751,8.716 15.39,8.716A0.75,0.75,0,0,0,16.141,7.966L16.141,7.966A0.75,0.75,0,0,0,15.39,7.216z" />
+                                            </DrawingGroup>
+                                        </DrawingGroup>
+                                    </DrawingImage.Drawing>
+                                </DrawingImage>
+                            </Image.Source>
+                        </Image>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.8" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="MinButton" TargetType="Button">
+        <Setter Property="OverridesDefaultStyle" Value="True" />
+        <Setter Property="Cursor" Value="Hand" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Grid VerticalAlignment="Center" Cursor="Hand" HorizontalAlignment="Center" Background="White" Opacity="0.2" Width="{TemplateBinding Width}" Height="{TemplateBinding Height}">
+                        <Image x:Name="image"  OpacityMask="{x:Null}">
+                            <Image.Source>
+                                <DrawingImage>
+                                    <DrawingImage.Drawing>
+                                        <DrawingGroup ClipGeometry="M0,0 V1.688 H20 V0 H0 Z">
+                                            <GeometryDrawing Brush="Black" Geometry="F1 M22.693,22.693z M0,0z M13.214,1.5L0.786,1.5A0.768,0.768,0,0,1,0,0.75L0,0.75A0.768,0.768,0,0,1,0.786,0L13.214,0A0.768,0.768,0,0,1,14,0.75L14,0.75A0.768,0.768,0,0,1,13.214,1.5z" />
+                                        </DrawingGroup>
+                                    </DrawingImage.Drawing>
+                                </DrawingImage>
+                            </Image.Source>
+                        </Image>
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Opacity" Value="0.8" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <DrawingImage x:Key="Image_InstallTitle">
+        <DrawingImage.Drawing>
+            <DrawingGroup ClipGeometry="M0,0 V1024 H1024 V0 H0 Z">
+                <GeometryDrawing Brush="#FF1890FF" Geometry="F1 M1024,1024z M0,0z M619.008,393.728L680.96,281.088 604.672,204.288 493.568,266.752C484.352,262.144,475.136,258.56,465.92,254.976L431.104,131.072 322.56,131.072 287.744,254.976C278.016,258.56,268.8,262.144,260.096,266.752L148.48,204.288 72.192,281.088 134.144,393.728C129.536,402.944,125.952,412.16,122.368,421.888L0,457.728 0,566.784 122.88,602.112C126.464,611.84,130.048,621.056,134.656,630.272L72.704,742.912 148.992,819.712 260.608,757.248C269.824,761.856,279.04,765.44,288.256,769.024L323.072,892.928 430.592,892.928 465.408,769.024C475.136,765.44,484.352,761.856,493.056,757.248L604.672,819.712 680.96,742.912 619.008,630.272C623.616,621.056,627.2,611.84,630.784,602.112L753.152,566.784 753.152,457.728 630.784,422.4C627.2,412.672,623.616,402.944,619.008,393.728z M376.832,638.976C307.2,638.976 250.88,582.144 250.88,512 250.88,441.856 307.2,385.024 376.32,385.024 445.44,385.024 501.76,441.856 501.76,512 502.272,582.144 445.952,638.976 376.832,638.976z M1011.2,378.368L1024,331.776 975.872,301.568C975.36,296.96,974.848,292.352,974.336,288.256L1014.272,247.296 990.72,205.312 935.424,218.624C931.84,215.552,928.768,212.992,924.672,210.432L924.16,153.088 878.08,140.288 848.384,188.928C843.776,189.44,839.68,189.952,835.072,190.464L794.624,150.016 753.152,173.568 766.464,229.376C763.392,232.96,760.832,236.544,758.272,240.128L701.44,240.64 688.64,287.232 736.768,317.44C737.28,322.048,737.792,326.656,738.304,330.752L698.368,371.712 721.92,413.696 777.216,400.384C780.8,403.456,783.872,406.016,787.968,408.576L788.48,465.92 834.56,478.72 864.256,429.568C868.864,429.056,872.96,428.544,877.568,428.032L918.016,468.48 959.488,444.928 946.176,389.12C949.248,385.536,951.808,381.952,954.368,378.368L1011.2,378.368z M910.336,324.608C902.144,354.816 871.424,372.224 841.728,364.032 812.032,355.84 794.624,324.608 802.816,294.4 811.008,264.192 841.728,246.784 871.424,254.976 901.12,263.68 918.528,294.912 910.336,324.608z" />
+            </DrawingGroup>
+        </DrawingImage.Drawing>
+    </DrawingImage>
+
+
+
+</ResourceDictionary>

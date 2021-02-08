@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Install", "Install\Install.csproj", "{0D6342A9-F444-4177-ACF4-4D4CE4DE869B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uninstall", "Uninstall\Uninstall.csproj", "{9E3D0BFF-89EE-492A-A7D9-1A86718DC90B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Install", "Install\Install.csproj", "{431536DC-6079-4932-8635-C73ED0733BE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0D6342A9-F444-4177-ACF4-4D4CE4DE869B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0D6342A9-F444-4177-ACF4-4D4CE4DE869B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0D6342A9-F444-4177-ACF4-4D4CE4DE869B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0D6342A9-F444-4177-ACF4-4D4CE4DE869B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E3D0BFF-89EE-492A-A7D9-1A86718DC90B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E3D0BFF-89EE-492A-A7D9-1A86718DC90B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E3D0BFF-89EE-492A-A7D9-1A86718DC90B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E3D0BFF-89EE-492A-A7D9-1A86718DC90B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{431536DC-6079-4932-8635-C73ED0733BE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{431536DC-6079-4932-8635-C73ED0733BE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{431536DC-6079-4932-8635-C73ED0733BE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{431536DC-6079-4932-8635-C73ED0733BE2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
