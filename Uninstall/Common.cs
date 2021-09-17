@@ -121,11 +121,11 @@ namespace Uninstall
         /// </summary>
         public string DefaultInstallPath { get; set; }
         /// <summary>
-        /// 程序名称 心田云-解密工具
+        /// 程序名称 
         /// </summary>
         public string DisplayName { get; set; }
         /// <summary>
-        /// 发布者 心田花开
+        /// 发布者 
         /// </summary>
         public string Publisher { get; set; }
         /// <summary>
@@ -149,11 +149,11 @@ namespace Uninstall
         /// </summary>
         public string MenuFolder { get; set; }
         /// <summary>
-        /// 快捷方式名称 心田云-解密工具.lnk
+        /// 快捷方式名称
         /// </summary>
         public string ShortcutName { get; set; }
         /// <summary>
-        /// 快捷方式卸载名称 卸载心田云-解密工具.lnk
+        /// 快捷方式卸载名称 
         /// </summary>
         public string UninstallShortcutName { get; set; }
         /// <summary>

@@ -121,7 +121,7 @@
 
                 <Grid Grid.Row="0" Background="White" x:Name="grid_title" VerticalAlignment="Center" Height="54">
                     <Image Width="24" HorizontalAlignment="Left" Height="24"  Source="{StaticResource Image_InstallTitle}"  Margin="24,0,0,0" VerticalAlignment="Center" x:Name="HeadPortrait" Stretch="Fill"/>
-                    <TextBlock HorizontalAlignment="Left" x:Name="txtTitle" Text="安装" FontSize="16" FontWeight="Bold" Height="22" Margin="56,0,0,0"></TextBlock>
+                    <TextBlock HorizontalAlignment="Left" x:Name="txtTitle" Text="安装2自定义" FontSize="16" FontWeight="Bold" Height="22" Margin="56,0,0,0"></TextBlock>
 
                     <Button x:Name="btnMin" Style="{StaticResource MinButton}" Cursor="Hand" HorizontalAlignment="Right" Width="24" Height="24" Margin="0,0,56,0" BorderThickness="0" BorderBrush="Transparent" Background="White"/>
                     <Button  x:Name="btnClose" Style="{StaticResource NormalMouseButton}" Cursor="Hand" HorizontalAlignment="Right" Width="24" Height="24" Margin="0,0,16,0" BorderThickness="0" BorderBrush="Transparent" Background="White"/>

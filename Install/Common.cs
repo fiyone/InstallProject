@@ -22,7 +22,7 @@ namespace Install
                 InstallConfigurationEntity Result = new InstallConfigurationEntity();
 
                 string StrXml = "";
-                //如果不存在 则从嵌入资源内读取 BlockSet.xml 
+                //如果不存在 则从嵌入资源内读取 
                 Assembly asm = Assembly.GetExecutingAssembly();//读取嵌入式资源
                 using (Stream sm = asm.GetManifestResourceStream(FileName))
                 {
@@ -216,11 +216,11 @@ namespace Install
         /// </summary>
         public string DefaultInstallPath { get; set; }
         /// <summary>
-        /// 程序名称 心田云-解密工具
+        /// 程序名称 
         /// </summary>
         public string DisplayName { get; set; }
         /// <summary>
-        /// 发布者 心田花开
+        /// 发布者
         /// </summary>
         public string Publisher { get; set; }
         /// <summary>
@@ -244,11 +244,11 @@ namespace Install
         /// </summary>
         public string MenuFolder { get; set; }
         /// <summary>
-        /// 快捷方式名称 心田云-解密工具.lnk
+        /// 快捷方式名称 
         /// </summary>
         public string ShortcutName { get; set; }
         /// <summary>
-        /// 快捷方式卸载名称 卸载心田云-解密工具.lnk
+        /// 快捷方式卸载名称 
         /// </summary>
         public string UninstallShortcutName { get; set; }
         /// <summary>
